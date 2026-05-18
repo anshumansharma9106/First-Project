@@ -1,3 +1,3 @@
-# Demo
+# Info
 
 This is my first project....
