@@ -1,0 +1,70 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-area">
+          <span class="check-icon">✓</span>
+          <h1>Todo App</h1>
+        </div>
+        <p class="subtitle">Add tasks, stay organized, get things done.</p>
+      </div>
+
+      <div class="content-card">
+        <div class="input-box">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What do you need to do?"
+          />
+          <button id="addBtn">Add Task</button>
+        </div>
+
+        <div class="task-list-container">
+          <ul id="taskList">
+            <li class="task-item">
+              <input type="checkbox" />
+              <span class="task-text">Learn JavaScript Basics</span>
+              <i class="fa-regular fa-trash-can delete-icon"></i>
+            </li>
+            <li class="task-item completed">
+              <input type="checkbox" checked />
+              <span class="task-text">Build a Todo App</span>
+              <i class="fa-regular fa-trash-can delete-icon"></i>
+            </li>
+            <li class="task-item">
+              <input type="checkbox" />
+              <span class="task-text">Practice DOM Manipulation</span>
+              <i class="fa-regular fa-trash-can delete-icon"></i>
+            </li>
+            <li class="task-item completed">
+              <input type="checkbox" checked />
+              <span class="task-text">Understand Events in JS</span>
+              <i class="fa-regular fa-trash-can delete-icon"></i>
+            </li>
+            <li class="task-item">
+              <input type="checkbox" />
+              <span class="task-text">Do a small project</span>
+              <i class="fa-regular fa-trash-can delete-icon"></i>
+            </li>
+          </ul>
+        </div>
+        <!-- Footer Info -->
+        <div class="list-footer">2 of 5 tasks completed</div>
+      </div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
